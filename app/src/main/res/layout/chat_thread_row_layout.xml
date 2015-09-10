@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:weightSum="1"
+    android:background="#ffffff"
+    android:id="@+id/chat_item">
+
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingEnd="8dp"
+        android:paddingStart="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentlinearLayout"
+        android:layout_alignTop="@+id/image_layout"
+        android:layout_toEndOf="@+id/image_layout">
+
+        <TextView
+            android:id="@+id/name"
+            android:paddingEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="My Name"
+            android:textStyle="bold"
+            android:textColor="#444343"
+            android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <TextView
+            android:id="@+id/latest_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="You: Y u no override BaseAdapter?"
+            android:textColor="#797979"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/datelinearLayout">
+
+        <TextView
+            android:id="@+id/date"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="4/20/20"
+            android:textColor="#797979"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+    </LinearLayout>
+
+</RelativeLayout>

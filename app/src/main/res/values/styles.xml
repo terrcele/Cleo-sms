@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!--<item name="android:actionBarStyle">@style/ActionBar</item>-->
+    </style>
+
+    <!--<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">-->
+        <!--<item name="android:actionBarStyle">@style/ActionBar</item>-->
+    <!--</style>-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light">-->
+        <!--<item name="actionBarStyle">@style/ActionBar</item>-->
+    <!--</style>-->
+
+    <!--<style name="ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--<item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <!--<style name="ActionBar" parent="android:Widget.ActionBar">-->
+        <!--<item name="android:background">@color/actionbar_color</item>-->
+        <!--<item name="android:icon">@android:color/transparent</item>-->
+        <!--<item name="android:titleTextStyle">@style/ActionBar.TitleText</item>-->
+    <!--</style>-->
+
+    <style name="ActionBar.TitleText" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light">-->
+        <!--<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
+    <!--</style>-->
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+</resources>
